@@ -13,13 +13,6 @@ Either run
 bower install mr-bootstrap-bb-alert
 ```
 
-or 
-
-```
-bower install mr-bootstrap-bb-alert -g
-```
-
-
 to the require section of your `bower.json` file.
 
 ## Usage js events
