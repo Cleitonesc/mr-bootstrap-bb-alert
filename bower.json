@@ -1,0 +1,29 @@
+{
+  "name": "mr-bootstrap-bb-alert",
+  "description": "Plugin to display bootstrap popup alert. Used default bootstrap class 'bb-alert'.",
+  "main": "",
+  "keywords": [
+    "alert",
+    "bb-alert",
+    "mackrais",
+    "bootstrap",
+    "popup",
+    "alert"
+  ],
+  "authors": [
+    "Oleh Boiko"
+  ],
+  "license": "MIT",
+  "homepage": "http://mackrais.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7"
+  }
+}

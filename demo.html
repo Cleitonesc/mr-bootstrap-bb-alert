@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Bootstrap BB Alerts (MackRais)</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/mr.bootstrap.bb.alert.css">
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/mr.bootstrap.bb.alert.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-center">Demo Bootstrap BB Alerts (MackRais)</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon">Start show time</span>
+                <input type="text" class="form-control" id="startShowTime" value="0">
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="input-group">
+                <span class="input-group-addon">End show time</span>
+                <input type="text" class="form-control" id="endShowTime" value="5">
+            </div>
+        </div>
+
+
+        <hr>
+
+        <div class="col-md-12">
+            <div class="form-group text-center">
+                <button class="btn btn-success" onclick="MsgSuccess('Hello world!',
+                !isNaN($('#endShowTime').val()) ? $('#endShowTime').val() *1000 : 5000,
+                !isNaN($('#startShowTime').val()) ? $('#startShowTime').val() *1000 : 0 )"
+                >Alert
+                    success
+                </button>
+
+                <button class="btn btn-danger" onclick="MsgError('Hello world!',
+                !isNaN($('#endShowTime').val()) ? $('#endShowTime').val() *1000 : 5000,
+                !isNaN($('#startShowTime').val()) ? $('#startShowTime').val() *1000 : 0 )"
+                >Alert
+                    Error
+                </button>
+
+                <button class="btn btn-warning" onclick="MsgWarning('Hello world!',
+                !isNaN($('#endShowTime').val()) ? $('#endShowTime').val() *1000 : 5000,
+                !isNaN($('#startShowTime').val()) ? $('#startShowTime').val() *1000 : 0 )"
+                >Alert
+                    warning
+                </button>
+
+                <button class="btn btn-info" onclick="MsgInfo('Hello world!',
+                !isNaN($('#endShowTime').val()) ? $('#endShowTime').val() *1000 : 5000,
+                !isNaN($('#startShowTime').val()) ? $('#startShowTime').val() *1000 : 0 )"
+                >Alert
+                    Info
+                </button>
+            </div>
+
+            <div class="col-md-12">
+                <h3 class="text-center">How use</h3>
+            </div>
+
+            <div class="col-md-12 text-center">
+                &lt;script&gt;  <br/>
+               <code>
+                     MsgSuccess('Hello world!',5000,0) <br/>
+                     MsgError('Hello world!',5000,0)<br/>
+                     MsgWarning('Hello world!',5000,0)<br/>
+                     MsgInfo('Hello world!',5000,0)<br/>
+               </code>
+                &lt;/script&gt;
+                <br/>
+                Where 5000 - it`s time when hide<br/>
+                      0 - it`s time when show
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
