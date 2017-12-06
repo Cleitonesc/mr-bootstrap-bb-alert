@@ -32,4 +32,4 @@ Where 5000 - it's time when hide
 
 ## License
 
-**yii2-btn-copy-html-block** is released under the BSD 3-Clause License. See the bundled `LICENSE.md` for details.
+**mr-bootstrap-bb-alert** is released under the BSD 3-Clause License. See the bundled `LICENSE.md` for details.
